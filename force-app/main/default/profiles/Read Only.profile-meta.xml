@@ -11,9 +11,26 @@
         <field>Account.ClinicSchemaName__c</field>
         <readable>true</readable>
     </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>AccountActivation__c.JSON__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>AccountActivation__c.Type__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
     <layoutAssignments>
         <layout>Account-Clinic</layout>
     </layoutAssignments>
+    <layoutAssignments>
+        <layout>AccountActivation__c-Account Activation Layout</layout>
+    </layoutAssignments>
+    <tabVisibilities>
+        <tab>AccountActivation__c</tab>
+        <visibility>DefaultOff</visibility>
+    </tabVisibilities>
     <userLicense>Salesforce</userLicense>
     <userPermissions>
         <enabled>true</enabled>
