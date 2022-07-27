@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Onboarding_ID_Auto__c</fullName>
+    <displayFormat>{0}</displayFormat>
+    <externalId>true</externalId>
+    <label>Onboarding ID</label>
+    <trackHistory>false</trackHistory>
+    <type>AutoNumber</type>
+</CustomField>
