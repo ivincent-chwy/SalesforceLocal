@@ -40,12 +40,22 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Account.Category__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Account.ClinicSchemaName__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
         <field>Account.Onboarding_ID_Auto__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.Subtype__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -64,7 +74,31 @@
         <readable>true</readable>
     </fieldPermissions>
     <layoutAssignments>
+        <layout>Account-Association</layout>
+        <recordType>Account.Association</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>Account-Clinic</layout>
+        <recordType>Account.Clinic</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Account-Parent Company</layout>
+        <recordType>Account.Parent_Company</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Account-School</layout>
+        <recordType>Account.School</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Account-Vendor</layout>
+        <recordType>Account.Vendor</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Account-Veterinary Partner</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Account-Veterinary Partner</layout>
+        <recordType>Account.VeterinaryPartner</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>AccountActivation__c-Account Activation Layout</layout>
@@ -72,6 +106,26 @@
     <layoutAssignments>
         <layout>Lead-Lead Layout</layout>
     </layoutAssignments>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Account.Association</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Account.School</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Account.Vendor</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>true</default>
+        <recordType>Account.VeterinaryPartner</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
     <tabVisibilities>
         <tab>AccountActivation__c</tab>
         <visibility>DefaultOff</visibility>
