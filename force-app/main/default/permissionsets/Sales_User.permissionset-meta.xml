@@ -2,12 +2,12 @@
 <PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
     <fieldPermissions>
         <editable>false</editable>
-        <field>AccountActivation__c.JSON__c</field>
+        <field>Account.Onboarding_ID_Auto__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>AccountActivation__c.Type__c</field>
+        <field>Contact.Onboarding_ID_formula__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <hasActivationRequired>false</hasActivationRequired>
