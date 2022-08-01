@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Subtype__c</fullName>
+    <externalId>false</externalId>
+    <label>Subtype</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Corporate Account</fullName>
+                <default>false</default>
+                <label>Corporate Account</label>
+            </value>
+            <value>
+                <fullName>Independent</fullName>
+                <default>false</default>
+                <label>Independent</label>
+            </value>
+            <value>
+                <fullName>Shelter/Non-Profit</fullName>
+                <default>false</default>
+                <label>Shelter/Non-Profit</label>
+            </value>
+            <value>
+                <fullName>Buying Group</fullName>
+                <default>false</default>
+                <label>Buying Group</label>
+            </value>
+            <value>
+                <fullName>Capital Partner/Investor</fullName>
+                <default>false</default>
+                <label>Capital Partner/Investor</label>
+            </value>
+            <value>
+                <fullName>PIMS</fullName>
+                <default>false</default>
+                <label>PIMS</label>
+            </value>
+            <value>
+                <fullName>Manufacturer</fullName>
+                <default>false</default>
+                <label>Manufacturer</label>
+            </value>
+            <value>
+                <fullName>Distributor</fullName>
+                <default>false</default>
+                <label>Distributor</label>
+            </value>
+            <value>
+                <fullName>National</fullName>
+                <default>false</default>
+                <label>National</label>
+            </value>
+            <value>
+                <fullName>Regional</fullName>
+                <default>false</default>
+                <label>Regional</label>
+            </value>
+            <value>
+                <fullName>University/College</fullName>
+                <default>false</default>
+                <label>University/College</label>
+            </value>
+            <value>
+                <fullName>Shelter</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Shelter</label>
+            </value>
+            <value>
+                <fullName>Vendor</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Vendor</label>
+            </value>
+            <value>
+                <fullName>Vet Association</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Vet Association</label>
+            </value>
+            <value>
+                <fullName>Vet School</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Vet School</label>
+            </value>
+            <value>
+                <fullName>Veterinary Partner</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Veterinary Partner</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

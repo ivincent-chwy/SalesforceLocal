@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Category__c</fullName>
+    <externalId>false</externalId>
+    <label>Category</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Subtype__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Capital Partner</fullName>
+                <default>false</default>
+                <label>Capital Partner</label>
+            </value>
+            <value>
+                <fullName>Community College</fullName>
+                <default>false</default>
+                <label>Community College</label>
+            </value>
+            <value>
+                <fullName>General Practice</fullName>
+                <default>false</default>
+                <label>General Practice</label>
+            </value>
+            <value>
+                <fullName>Investor</fullName>
+                <default>false</default>
+                <label>Investor</label>
+            </value>
+            <value>
+                <fullName>Non-Profit</fullName>
+                <default>false</default>
+                <label>Non-Profit</label>
+            </value>
+            <value>
+                <fullName>Shelter</fullName>
+                <default>false</default>
+                <label>Shelter</label>
+            </value>
+            <value>
+                <fullName>Specialty</fullName>
+                <default>false</default>
+                <label>Specialty</label>
+            </value>
+            <value>
+                <fullName>Vet Tech School</fullName>
+                <default>false</default>
+                <label>Vet Tech School</label>
+            </value>
+            <value>
+                <fullName>Buying Group</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Buying Group</label>
+            </value>
+            <value>
+                <fullName>Capital Partner/Investor</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Capital Partner/Investor</label>
+            </value>
+            <value>
+                <fullName>Cloud Based</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Cloud Based</label>
+            </value>
+            <value>
+                <fullName>College University</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>College / University</label>
+            </value>
+            <value>
+                <fullName>Corporate Account</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Corporate Account</label>
+            </value>
+            <value>
+                <fullName>Corporate Account Buying Group</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Corporate Account Buying Group</label>
+            </value>
+            <value>
+                <fullName>Distributor</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Distributor</label>
+            </value>
+            <value>
+                <fullName>Independent</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Independent</label>
+            </value>
+            <value>
+                <fullName>Independent Company</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Independent Company</label>
+            </value>
+            <value>
+                <fullName>Manufacturer</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Manufacturer</label>
+            </value>
+            <value>
+                <fullName>National</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>National</label>
+            </value>
+            <value>
+                <fullName>On Premise</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>On Premise</label>
+            </value>
+            <value>
+                <fullName>PIMS</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>PIMS</label>
+            </value>
+            <value>
+                <fullName>Regional</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Regional</label>
+            </value>
+            <value>
+                <fullName>Shelter Non Profit</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Shelter/Non Profit</label>
+            </value>
+            <value>
+                <fullName>University</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>University</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>University/College</controllingFieldValue>
+            <valueName>Community College</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>University/College</controllingFieldValue>
+            <valueName>Vet Tech School</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Corporate Account</controllingFieldValue>
+            <controllingFieldValue>Independent</controllingFieldValue>
+            <valueName>General Practice</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Corporate Account</controllingFieldValue>
+            <controllingFieldValue>Independent</controllingFieldValue>
+            <valueName>Specialty</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shelter/Non-Profit</controllingFieldValue>
+            <valueName>Non-Profit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shelter/Non-Profit</controllingFieldValue>
+            <valueName>Shelter</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Capital Partner/Investor</controllingFieldValue>
+            <valueName>Capital Partner</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Capital Partner/Investor</controllingFieldValue>
+            <valueName>Investor</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

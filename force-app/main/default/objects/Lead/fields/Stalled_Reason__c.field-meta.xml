@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Stalled_Reason__c</fullName>
+    <externalId>false</externalId>
+    <label>Stalled Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Competition</fullName>
+                <default>false</default>
+                <label>Competition</label>
+            </value>
+            <value>
+                <fullName>Non-Responsive (&lt; 90 days)</fullName>
+                <default>false</default>
+                <label>Non-Responsive (&lt; 90 days)</label>
+            </value>
+            <value>
+                <fullName>Onboarding Documentation</fullName>
+                <default>false</default>
+                <label>Onboarding Documentation</label>
+            </value>
+            <value>
+                <fullName>Timing – Decision Maker</fullName>
+                <default>false</default>
+                <label>Timing – Decision Maker</label>
+            </value>
+            <value>
+                <fullName>Timing – New Clinic / Staff</fullName>
+                <default>false</default>
+                <label>Timing – New Clinic / Staff</label>
+            </value>
+            <value>
+                <fullName>Timing – PIMS System</fullName>
+                <default>false</default>
+                <label>Timing – PIMS System</label>
+            </value>
+            <value>
+                <fullName>Timing – Seasonality</fullName>
+                <default>false</default>
+                <label>Timing – Seasonality</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Pending decision/decision maker</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Pending decision/decision maker</label>
+            </value>
+            <value>
+                <fullName>Timing</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Timing</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

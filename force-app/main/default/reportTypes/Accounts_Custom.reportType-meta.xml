@@ -173,7 +173,7 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Family__c</field>
+            <field>Subtype__c</field>
             <table>Account</table>
         </columns>
         <columns>
@@ -188,7 +188,7 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Genus__c</field>
+            <field>Category__c</field>
             <table>Account</table>
         </columns>
         <columns>
@@ -1104,6 +1104,11 @@
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>ActivationDate__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Area__c</field>
             <table>Account</table>
         </columns>
         <masterLabel>Accounts</masterLabel>
