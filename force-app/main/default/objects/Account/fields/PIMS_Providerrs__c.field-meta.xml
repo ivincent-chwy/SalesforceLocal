@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PIMS_Providerrs__c</fullName>
+    <externalId>false</externalId>
+    <label>PIMS Providers</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>AI Galaxy and AI Genesis</fullName>
+                <default>false</default>
+                <label>AI Galaxy and AI Genesis</label>
+            </value>
+            <value>
+                <fullName>AVImark</fullName>
+                <default>false</default>
+                <label>AVImark</label>
+            </value>
+            <value>
+                <fullName>Cornerstone</fullName>
+                <default>false</default>
+                <label>Cornerstone</label>
+            </value>
+            <value>
+                <fullName>Covetrus Pulse (eVet)</fullName>
+                <default>false</default>
+                <label>Covetrus Pulse (eVet)</label>
+            </value>
+            <value>
+                <fullName>DaySmart Vet</fullName>
+                <default>false</default>
+                <label>DaySmart Vet</label>
+            </value>
+            <value>
+                <fullName>Digitail</fullName>
+                <default>false</default>
+                <label>Digitail</label>
+            </value>
+            <value>
+                <fullName>DVMAX</fullName>
+                <default>false</default>
+                <label>DVMAX</label>
+            </value>
+            <value>
+                <fullName>ezyVet</fullName>
+                <default>false</default>
+                <label>ezyVet</label>
+            </value>
+            <value>
+                <fullName>Hippo Manager</fullName>
+                <default>false</default>
+                <label>Hippo Manager</label>
+            </value>
+            <value>
+                <fullName>IDEXX Neo</fullName>
+                <default>false</default>
+                <label>IDEXX Neo</label>
+            </value>
+            <value>
+                <fullName>ImproMed Advantage</fullName>
+                <default>false</default>
+                <label>ImproMed Advantage</label>
+            </value>
+            <value>
+                <fullName>ImproMed Equine</fullName>
+                <default>false</default>
+                <label>ImproMed Equine</label>
+            </value>
+            <value>
+                <fullName>ImproMed Infinity</fullName>
+                <default>false</default>
+                <label>ImproMed Infinity</label>
+            </value>
+            <value>
+                <fullName>IntraVet</fullName>
+                <default>false</default>
+                <label>IntraVet</label>
+            </value>
+            <value>
+                <fullName>No PIMS</fullName>
+                <default>false</default>
+                <label>No PIMS</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Provet Cloud</fullName>
+                <default>false</default>
+                <label>Provet Cloud</label>
+            </value>
+            <value>
+                <fullName>Shepherd</fullName>
+                <default>false</default>
+                <label>Shepherd</label>
+            </value>
+            <value>
+                <fullName>VetBadger</fullName>
+                <default>false</default>
+                <label>VetBadger</label>
+            </value>
+            <value>
+                <fullName>VetOfficeSuite.com</fullName>
+                <default>false</default>
+                <label>VetOfficeSuite.com</label>
+            </value>
+            <value>
+                <fullName>VetPort</fullName>
+                <default>false</default>
+                <label>VetPort</label>
+            </value>
+            <value>
+                <fullName>Vetspire</fullName>
+                <default>false</default>
+                <label>Vetspire</label>
+            </value>
+            <value>
+                <fullName>VIA</fullName>
+                <default>false</default>
+                <label>VIA</label>
+            </value>
+            <value>
+                <fullName>Provider 3</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Provider 3</label>
+            </value>
+            <value>
+                <fullName>Provider 4</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Provider 4</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>
