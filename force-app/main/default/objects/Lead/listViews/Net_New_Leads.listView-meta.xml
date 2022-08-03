@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Net_New_Leads</fullName>
+    <columns>FULL_NAME</columns>
+    <columns>LEAD.EMAIL</columns>
+    <columns>LEAD.COMPANY</columns>
+    <columns>LEAD.STATE</columns>
+    <columns>LEAD.STATUS</columns>
+    <columns>LEAD.UNREAD</columns>
+    <columns>LEAD.CREATED_DATE</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>LEAD.LAST_ACTIVITY</columns>
+    <columns>LEAD.LEAD_SOURCE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>LEAD.STATUS</field>
+        <operation>equals</operation>
+        <value>New</value>
+    </filters>
+    <filters>
+        <field>LEAD.UNREAD</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>LEAD.COMPANY</field>
+        <operation>notContain</operation>
+        <value>Banfield,Noah&apos;s Animal,Vetco,Petco,Better Vet,Destination Pet,Ethos Vet,My Pet,Rarebreed,Schwarzman,Valley Vet,Vet’s Best Friend,BondVet,Lakefield,Thrive,VIP Pet,Test</value>
+    </filters>
+    <filters>
+        <field>LEAD.EMAIL</field>
+        <operation>notEqual</operation>
+    </filters>
+    <filters>
+        <field>LEAD.COMPANY</field>
+        <operation>notEqual</operation>
+        <value>unknown,chewy</value>
+    </filters>
+    <filters>
+        <field>Parent_Company__c</field>
+        <operation>equals</operation>
+    </filters>
+    <filters>
+        <field>Do_Not_Enroll__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>LEAD.LAST_ACTIVITY</field>
+        <operation>equals</operation>
+    </filters>
+    <filters>
+        <field>LEAD.CREATED_DATE</field>
+        <operation>lessThan</operation>
+        <value>THIS_MONTH</value>
+    </filters>
+    <filters>
+        <field>LEAD.LEAD_SOURCE</field>
+        <operation>notEqual</operation>
+        <value>Landing Page,Trade Show</value>
+    </filters>
+    <label>Net New Leads</label>
+</ListView>

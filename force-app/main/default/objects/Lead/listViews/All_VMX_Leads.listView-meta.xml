@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_VMX_Leads</fullName>
+    <columns>FULL_NAME</columns>
+    <columns>LEAD.COMPANY</columns>
+    <columns>Assign_Based_on_State__c</columns>
+    <columns>LEAD.STATE</columns>
+    <columns>LEAD.PHONE</columns>
+    <columns>LEAD.EMAIL</columns>
+    <columns>LEAD.STATUS</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>LEAD.CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>LEAD.LEAD_SOURCE</field>
+        <operation>equals</operation>
+        <value>Trade Show</value>
+    </filters>
+    <filters>
+        <field>Scan_Date__c</field>
+        <operation>greaterOrEqual</operation>
+        <value>1/16/2022</value>
+    </filters>
+    <filters>
+        <field>Scan_Date__c</field>
+        <operation>lessThan</operation>
+        <value>1/19/2022</value>
+    </filters>
+    <label>All VMX Leads</label>
+    <sharedTo>
+        <role>Admin</role>
+        <role>Manager</role>
+    </sharedTo>
+</ListView>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Stalledreason_required_for_stage_stalled</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(ISPICKVAL(Status,&apos;Stalled&apos;),ISBLANK(TEXT(Stalled_Reason__c)))</errorConditionFormula>
+    <errorMessage>Stalled reason is required when the status is &apos;Stalled&apos;.</errorMessage>
+</ValidationRule>
