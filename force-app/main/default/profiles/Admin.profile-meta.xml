@@ -345,6 +345,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Lead.Type__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Lead.Unique_Chewy_ID__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -1030,6 +1035,10 @@
     <userPermissions>
         <enabled>true</enabled>
         <name>ManageSynonyms</name>
+    </userPermissions>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>ManageTerritories</name>
     </userPermissions>
     <userPermissions>
         <enabled>true</enabled>
