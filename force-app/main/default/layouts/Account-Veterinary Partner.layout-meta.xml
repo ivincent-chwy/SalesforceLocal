@@ -101,8 +101,12 @@
                 <field>RecordTypeId</field>
             </layoutItems>
             <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>Level__c</field>
+            </layoutItems>
+            <layoutItems>
                 <behavior>Edit</behavior>
-                <field>Subtype__c</field>
+                <field>ClinicOverride__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
@@ -110,6 +114,10 @@
             </layoutItems>
         </layoutColumns>
         <layoutColumns>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Type</field>
+            </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>Type</field>
