@@ -30,7 +30,7 @@
             </value>
         </assignmentItems>
         <connector>
-            <targetReference>Update_Account</targetReference>
+            <targetReference>Decision_Update_Type</targetReference>
         </connector>
     </assignments>
     <assignments>
@@ -49,13 +49,29 @@
             <targetReference>Decision_Has_Parent</targetReference>
         </connector>
     </assignments>
+    <assignments>
+        <name>Assign_Type</name>
+        <label>Assign: Type</label>
+        <locationX>50</locationX>
+        <locationY>1367</locationY>
+        <assignmentItems>
+            <assignToReference>vAccount.Type</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>fType</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_Account</targetReference>
+        </connector>
+    </assignments>
     <decisions>
         <name>Decision_Has_Parent</name>
         <label>Decision: Has Parent</label>
         <locationX>182</locationX>
         <locationY>911</locationY>
         <defaultConnector>
-            <targetReference>Update_Account</targetReference>
+            <targetReference>Decision_Update_Type</targetReference>
         </defaultConnector>
         <defaultConnectorLabel>No</defaultConnectorLabel>
         <rules>
@@ -113,6 +129,40 @@
             <label>Yes</label>
         </rules>
     </decisions>
+    <decisions>
+        <name>Decision_Update_Type</name>
+        <label>Decision: Update Type?</label>
+        <locationX>182</locationX>
+        <locationY>1247</locationY>
+        <defaultConnector>
+            <targetReference>Update_Account</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>No</defaultConnectorLabel>
+        <rules>
+            <name>Yes</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_ConvertedAccount.Type</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Type</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <formulas>
+        <name>fType</name>
+        <dataType>String</dataType>
+        <expression>IF(
+  ISBLANK(TEXT({!Get_ConvertedAccount.Type})) &amp;&amp;
+  NOT(ISBLANK(TEXT({!$Record.Type__c}))), 
+TEXT({!$Record.Type__c}),
+&quot;Independent&quot;)</expression>
+    </formulas>
     <interviewLabel>Lead - After Create/Update - Account Convert Assignment {!$Flow.CurrentDateTime}</interviewLabel>
     <label>Lead - After Create/Update - Account Convert Assignment</label>
     <processMetadataValues>
@@ -159,7 +209,7 @@
         <name>Update_Account</name>
         <label>Update: Account</label>
         <locationX>182</locationX>
-        <locationY>1247</locationY>
+        <locationY>1583</locationY>
         <inputReference>vAccount</inputReference>
     </recordUpdates>
     <start>
