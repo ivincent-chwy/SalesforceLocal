@@ -187,6 +187,76 @@
         </values>
     </picklistValues>
     <picklistValues>
+        <picklist>Family__c</picklist>
+        <values>
+            <fullName>Vendor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vet Association</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vet School</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Veterinary Partner</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Genus__c</picklist>
+        <values>
+            <fullName>Buying Group</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Capital Partner%2FInvestor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>College University</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Corporate Account</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Distributor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Independent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manufacturer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>National</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PIMS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Regional</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shelter Non Profit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vet Tech School</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
         <picklist>Home_Delivery_Provider__c</picklist>
         <values>
             <fullName>Covetrus</fullName>

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>Clinic</fullName>
-    <active>false</active>
-    <label>Clinic</label>
+    <fullName>Delete</fullName>
+    <active>true</active>
+    <label>Delete</label>
     <picklistValues>
         <picklist>AccountSource</picklist>
         <values>
@@ -23,6 +23,10 @@
         </values>
         <values>
             <fullName>Referral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trade Show</fullName>
             <default>false</default>
         </values>
     </picklistValues>
@@ -50,105 +54,6 @@
         </values>
         <values>
             <fullName>Small Animals - Dog</fullName>
-            <default>false</default>
-        </values>
-    </picklistValues>
-    <picklistValues>
-        <picklist>Category__c</picklist>
-        <values>
-            <fullName>Anesthesia %26 Pain Management</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Avian %26 Exotic Pet</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Brick %26 Mortar</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Cardiology</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Dentistry</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Dermatology</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Diagnostic Imaging</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Emergency %26 Critical Care</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Hemodialysis</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Integrative Medicine</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Interventional Radiology %26 Endoscopy</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Mobile</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Neuroendoscopy</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Neurology</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Oncology</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Ophtalmology</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Pathology</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Pop-Up</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Radiation Oncology</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Reptile %26 Amphibian</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Sports Medicine and Rehab</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Surgery</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Surgical Oncology</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Urgent Care</fullName>
             <default>false</default>
         </values>
     </picklistValues>
@@ -217,6 +122,10 @@
         </values>
         <values>
             <fullName>Corporate Account</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Distributor</fullName>
             <default>false</default>
         </values>
         <values>
@@ -701,88 +610,6 @@
         </values>
         <values>
             <fullName>Treatment Services</fullName>
-            <default>false</default>
-        </values>
-    </picklistValues>
-    <picklistValues>
-        <picklist>Subtype__c</picklist>
-        <values>
-            <fullName>Capital Partner</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Community College</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>General Practice</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Investor</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Non-Profit</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Shelter</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Specialty</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Vet Tech School</fullName>
-            <default>false</default>
-        </values>
-    </picklistValues>
-    <picklistValues>
-        <picklist>Type</picklist>
-        <values>
-            <fullName>Buying Group</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Capital Partner%2FInvestor</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Corporate Account</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Distributor</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Independent</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Manufacturer</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>National</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>PIMS</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Regional</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Shelter%2FNon-Profit</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>University%2FCollege</fullName>
             <default>false</default>
         </values>
     </picklistValues>

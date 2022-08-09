@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>On_site_Practice_Pet_Species__c</fullName>
+    <externalId>false</externalId>
+    <label>On-site/Practice Pet Species</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Dog</fullName>
+                <default>false</default>
+                <label>Dog</label>
+            </value>
+            <value>
+                <fullName>Cat</fullName>
+                <default>false</default>
+                <label>Cat</label>
+            </value>
+            <value>
+                <fullName>Horse</fullName>
+                <default>false</default>
+                <label>Horse</label>
+            </value>
+            <value>
+                <fullName>Bird</fullName>
+                <default>false</default>
+                <label>Bird</label>
+            </value>
+            <value>
+                <fullName>Fish</fullName>
+                <default>false</default>
+                <label>Fish</label>
+            </value>
+            <value>
+                <fullName>Reptile</fullName>
+                <default>false</default>
+                <label>Reptile</label>
+            </value>
+            <value>
+                <fullName>Rabbit</fullName>
+                <default>false</default>
+                <label>Rabbit</label>
+            </value>
+            <value>
+                <fullName>Guinea Pig</fullName>
+                <default>false</default>
+                <label>Guinea Pig</label>
+            </value>
+            <value>
+                <fullName>Hamster</fullName>
+                <default>false</default>
+                <label>Hamster</label>
+            </value>
+            <value>
+                <fullName>Chinchilla &amp; Degu</fullName>
+                <default>false</default>
+                <label>Chinchilla &amp; Degu</label>
+            </value>
+            <value>
+                <fullName>Gerbil</fullName>
+                <default>false</default>
+                <label>Gerbil</label>
+            </value>
+            <value>
+                <fullName>Ferret</fullName>
+                <default>false</default>
+                <label>Ferret</label>
+            </value>
+            <value>
+                <fullName>Mouse &amp; Rats</fullName>
+                <default>false</default>
+                <label>Mouse &amp; Rats</label>
+            </value>
+            <value>
+                <fullName>Hedgehog</fullName>
+                <default>false</default>
+                <label>Hedgehog</label>
+            </value>
+            <value>
+                <fullName>Sugar Glider</fullName>
+                <default>false</default>
+                <label>Sugar Glider</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>
