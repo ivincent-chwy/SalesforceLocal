@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Home_Delivery_Provider_Other__c</fullName>
+    <description>Use when &quot;other&quot; is selected in the Home Delivery Provider field. This will carry over to the Practice Account upon conversion.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Use when &quot;other&quot; is selected in the Home Delivery Provider field. This will carry over to the Practice Account upon conversion.</inlineHelpText>
+    <label>Home Delivery Provider Other</label>
+    <length>120</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

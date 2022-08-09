@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Animal_Types_Treated__c</fullName>
+    <externalId>false</externalId>
+    <label>Animal Types Treated</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Small Animals - Dog</fullName>
+                <default>false</default>
+                <label>Small Animals - Dog</label>
+            </value>
+            <value>
+                <fullName>Small Animals - Cat</fullName>
+                <default>false</default>
+                <label>Small Animals - Cat</label>
+            </value>
+            <value>
+                <fullName>Large Animals - Horse</fullName>
+                <default>false</default>
+                <label>Large Animals - Horse</label>
+            </value>
+            <value>
+                <fullName>Large Animals - Other</fullName>
+                <default>false</default>
+                <label>Large Animals - Other</label>
+            </value>
+            <value>
+                <fullName>Exotic Animals</fullName>
+                <default>false</default>
+                <label>Exotic Animals</label>
+            </value>
+            <value>
+                <fullName>Food Animals</fullName>
+                <default>false</default>
+                <label>Food Animals</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>
