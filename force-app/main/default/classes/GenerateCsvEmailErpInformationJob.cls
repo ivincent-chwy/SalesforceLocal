@@ -10,6 +10,7 @@ MODIFICATION LOG
 * Version           Developer           Date                Description
 *-------------------------------------------------------------------------------------------
 * 1.0               Dominic Vario       2022-08-04          Initial development.
+* 1.1               Dominic Vario       2022-08-09          Updated WHERE criteria for "accts" Account List.
 *******************************************************************************************/
 
 public class GenerateCsvEmailErpInformationJob implements Schedulable {
@@ -25,11 +26,8 @@ public class GenerateCsvEmailErpInformationJob implements Schedulable {
             SELECT  Id, Name, Unique_Chewy_Id__c, SupplierName__c, SupplierId__c, SiteId__c, Owner.Name
             FROM    Account
             WHERE   SupplierName__c != NULL
-            AND     SupplierName__c != ''
-            AND     SupplierId__c != NULL 
-            AND     SupplierId__c != ''
-            AND     SiteId__c != NULL 
-            AND     SiteId__c != ''
+            OR      SupplierId__c != NULL 
+            OR      SiteId__c != NULL 
             ]) {
             for(Account acct : accts) {
                 csv +=  acct.Id + ',' 
