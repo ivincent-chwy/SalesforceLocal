@@ -43,6 +43,14 @@
         <connector>
             <targetReference>Action_Apex_RunTerritoryAssignment</targetReference>
         </connector>
+        <filterLogic>or</filterLogic>
+        <filters>
+            <field>BillingState</field>
+            <operator>IsChanged</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
         <object>Account</object>
         <recordTriggerType>Update</recordTriggerType>
         <triggerType>RecordAfterSave</triggerType>
