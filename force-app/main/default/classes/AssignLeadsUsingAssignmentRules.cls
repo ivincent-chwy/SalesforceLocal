@@ -5,8 +5,8 @@ public class AssignLeadsUsingAssignmentRules {
             Database.DMLOptions dmo = new Database.DMLOptions();
             dmo.assignmentRuleHeader.useDefaultRule= true;          
             Lead Leads=[SELECT Id 
-                        FROM Lead 
-                        WHERE Lead.Id IN :LeadIds];
+                          FROM Lead 
+                         WHERE Lead.Id IN :LeadIds];
             Leads.setOptions(dmo);
             update Leads;
    }
