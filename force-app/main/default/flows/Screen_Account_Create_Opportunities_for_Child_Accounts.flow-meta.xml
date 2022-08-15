@@ -376,7 +376,7 @@
             <targetReference>Get_ChildAccounts</targetReference>
         </connector>
     </start>
-    <status>Draft</status>
+    <status>Active</status>
     <variables>
         <name>Collection_OpportunitiesToCreate</name>
         <dataType>SObject</dataType>
