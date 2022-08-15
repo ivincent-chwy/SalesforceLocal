@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>52.0</apiVersion>
+    <assignments>
+        <name>Update_Closed_Won_Fields</name>
+        <label>Update Closed Won Fields</label>
+        <locationX>308</locationX>
+        <locationY>455</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Clinic_is_Live__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.Estimated_Go_Live_Date__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Today</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_Opportunity_Fields</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <name>Stagenamechecking</name>
+        <label>Stagenamechecking</label>
+        <locationX>176</locationX>
+        <locationY>335</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Stage_is_enrollment</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.StageName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Enrollment</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record__Prior.StageName</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>Enrollment</stringValue>
+                </rightValue>
+            </conditions>
+            <label>Stage is enrollment</label>
+        </rules>
+        <rules>
+            <name>Stage_is_onboarding</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.StageName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Onboarding</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record__Prior.StageName</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>Onboarding</stringValue>
+                </rightValue>
+            </conditions>
+            <label>Stage is onboarding</label>
+        </rules>
+        <rules>
+            <name>Stage_is_Closed_Won</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.StageName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Closed Won</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record__Prior.StageName</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>Closed Won</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Closed_Won_Fields</targetReference>
+            </connector>
+            <label>Stage is Closed Won</label>
+        </rules>
+    </decisions>
+    <description>Task for enrollment and closed won stages. And Field population on Closed Won.
+v3.23.2022: removed task creation actions</description>
+    <formulas>
+        <name>creadtedateplus2</name>
+        <dataType>Date</dataType>
+        <expression>Today()+2</expression>
+    </formulas>
+    <formulas>
+        <name>createdateplus3</name>
+        <dataType>Date</dataType>
+        <expression>Today()+3</expression>
+    </formulas>
+    <formulas>
+        <name>createddateplus1</name>
+        <dataType>Date</dataType>
+        <expression>Today()+1</expression>
+    </formulas>
+    <formulas>
+        <name>createddateplus5</name>
+        <dataType>Date</dataType>
+        <expression>Today()+5</expression>
+    </formulas>
+    <formulas>
+        <name>EnrollmentSubject</name>
+        <dataType>String</dataType>
+        <expression>{!$Record.Account.Name} &amp; &quot; &quot; &amp; &quot;Enrollment Document Collection&quot;</expression>
+    </formulas>
+    <formulas>
+        <name>FirstSubjectName</name>
+        <dataType>String</dataType>
+        <expression>{!$Record.Account.Name} &amp;&quot; &quot; &amp; &quot;Enrollment Document Collection&quot;</expression>
+    </formulas>
+    <formulas>
+        <name>SubjectforClosedWon</name>
+        <dataType>String</dataType>
+        <expression>{!$Record.Account.Name} &amp; &quot; &quot; &amp; &quot;is ready for Launch&quot;</expression>
+    </formulas>
+    <formulas>
+        <name>subjectforCompleteSNOWform</name>
+        <dataType>String</dataType>
+        <expression>{!$Record.Account.Name} &amp; &quot; Complete SNOW form&quot;</expression>
+    </formulas>
+    <formulas>
+        <name>subjectforIFYESonPIMSintegrationSendEULAEndUserLicenseAgreement</name>
+        <dataType>String</dataType>
+        <expression>{!$Record.Account.Name} &amp; &quot; IF YES on PIMS integration- Send EULA (End User License Agreement)&quot;</expression>
+    </formulas>
+    <formulas>
+        <name>subjectforIFYESonPIMSintegrationStartPIMSintegrationinternally</name>
+        <dataType>String</dataType>
+        <expression>{!$Record.Account.Name} &amp; &quot; IF YES on PIMS integration- Start PIMS integration internally&quot;</expression>
+    </formulas>
+    <formulas>
+        <name>subjectforIFYESonPIMSintegrationVerficationPIMSsupport</name>
+        <dataType>String</dataType>
+        <expression>{!$Record.Account.Name} &amp; &quot; IF YES on PIMS integration- Verfication PIMS support&quot;</expression>
+    </formulas>
+    <formulas>
+        <name>subjectforMarketingOptinOptout</name>
+        <dataType>String</dataType>
+        <expression>{!$Record.Account.Name} &amp; &quot; Marketing- Opt in/ Opt out&quot;</expression>
+    </formulas>
+    <formulas>
+        <name>Subjectforonboarding</name>
+        <dataType>String</dataType>
+        <expression>{!$Record.Account.Name} &amp; &quot; &quot; &amp; &quot;is ready for Onboarding&quot;</expression>
+    </formulas>
+    <formulas>
+        <name>SubjectforPIMsintegrationOptinOptout</name>
+        <dataType>String</dataType>
+        <expression>{!$Record.Account.Name} &amp; &quot; PIMs integration- Opt in / Opt out&quot;</expression>
+    </formulas>
+    <formulas>
+        <name>subjectforRequestFinancedetails</name>
+        <dataType>String</dataType>
+        <expression>{!$Record.Account.Name} &amp; &quot; Request Finance details&quot;</expression>
+    </formulas>
+    <formulas>
+        <name>subjectforSendMarketplaceSellerFormtoclient</name>
+        <dataType>String</dataType>
+        <expression>{!$Record.Account.Name} &amp; &quot; Send Marketplace Seller Form to client&quot;</expression>
+    </formulas>
+    <formulas>
+        <name>subjectforSendMSAandTCs</name>
+        <dataType>String</dataType>
+        <expression>{!$Record.Account.Name} &amp; &quot; Send MSA and T&amp;Cs&quot;</expression>
+    </formulas>
+    <formulas>
+        <name>subjectforSetupURLwithpreferencessettings</name>
+        <dataType>String</dataType>
+        <expression>{!$Record.Account.Name} &amp; &quot; Set up URL with preferences/settings&quot;</expression>
+    </formulas>
+    <formulas>
+        <name>Today</name>
+        <dataType>Date</dataType>
+        <expression>TODAY()</expression>
+    </formulas>
+    <interviewLabel>Task Automation for opportunity {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Task Automation for opportunity</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Update_Opportunity_Fields</name>
+        <label>Update Opportunity Fields</label>
+        <locationX>308</locationX>
+        <locationY>575</locationY>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Stagenamechecking</targetReference>
+        </connector>
+        <filterLogic>or</filterLogic>
+        <filters>
+            <field>StageName</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Enrollment</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>StageName</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Closed Won</stringValue>
+            </value>
+        </filters>
+        <object>Opportunity</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Layout xmlns="http://soap.sforce.com/2006/04/metadata">
-    <excludeButtons>DataDotComCompanyHierarchy</excludeButtons>
+    <excludeButtons>DataDotComAccountInsights</excludeButtons>
+    <excludeButtons>DataDotComClean</excludeButtons>
     <excludeButtons>DisableCustomerPortalAccount</excludeButtons>
     <excludeButtons>DisablePartnerPortalAccount</excludeButtons>
     <excludeButtons>IncludeOffline</excludeButtons>
@@ -554,6 +555,22 @@
             </layoutItem>
         </relatedContentItems>
     </relatedContent>
+    <relatedLists>
+        <fields>TERRITORY.NAME</fields>
+        <fields>MODEL.NAME</fields>
+        <fields>MODEL.STATE</fields>
+        <fields>ASSIGNMENT_DATE</fields>
+        <fields>ASSOCIATION_CAUSE</fields>
+        <relatedList>AccountAssignedTerritory2sRelatedList</relatedList>
+    </relatedLists>
+    <relatedLists>
+        <fields>FULL_NAME</fields>
+        <fields>CORE.USERS.EMAIL</fields>
+        <fields>ROLE_IN_TERRITORY</fields>
+        <fields>TERRITORY.NAME</fields>
+        <fields>MODEL.NAME</fields>
+        <relatedList>AccountUserTerritory2RelatedList</relatedList>
+    </relatedLists>
     <relatedLists>
         <fields>FULL_NAME</fields>
         <fields>LEAD.COMPANY</fields>
