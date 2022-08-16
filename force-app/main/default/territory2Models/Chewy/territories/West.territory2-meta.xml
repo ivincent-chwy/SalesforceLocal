@@ -3,6 +3,7 @@
     <accountAccessLevel>All</accountAccessLevel>
     <caseAccessLevel>Edit</caseAccessLevel>
     <contactAccessLevel>Edit</contactAccessLevel>
+    <description>Territory Level</description>
     <name>West</name>
     <opportunityAccessLevel>Edit</opportunityAccessLevel>
     <parentTerritory>Corporate</parentTerritory>
@@ -10,5 +11,5 @@
         <inherited>false</inherited>
         <ruleName>West</ruleName>
     </ruleAssociations>
-    <territory2Type>Standard</territory2Type>
+    <territory2Type>TerritoryLevel</territory2Type>
 </Territory2>

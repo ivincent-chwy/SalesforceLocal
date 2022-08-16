@@ -10,5 +10,5 @@
         <inherited>false</inherited>
         <ruleName>US0204</ruleName>
     </ruleAssociations>
-    <territory2Type>Standard</territory2Type>
+    <territory2Type>TerritoryLevel</territory2Type>
 </Territory2>

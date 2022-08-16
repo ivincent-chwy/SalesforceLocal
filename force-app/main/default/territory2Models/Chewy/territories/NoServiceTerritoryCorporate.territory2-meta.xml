@@ -10,5 +10,5 @@
         <inherited>false</inherited>
         <ruleName>No_Service_Territory_States</ruleName>
     </ruleAssociations>
-    <territory2Type>Standard</territory2Type>
+    <territory2Type>TerritoryLevel</territory2Type>
 </Territory2>
