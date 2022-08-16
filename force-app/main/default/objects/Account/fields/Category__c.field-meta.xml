@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Category__c</fullName>
+    <externalId>false</externalId>
+    <label>Category</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <controllingField>Subtype__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Anesthesia &amp; Pain Management</fullName>
+                <default>false</default>
+                <label>Anesthesia &amp; Pain Management</label>
+            </value>
+            <value>
+                <fullName>Avian &amp; Exotic Pet</fullName>
+                <default>false</default>
+                <label>Avian &amp; Exotic Pet</label>
+            </value>
+            <value>
+                <fullName>Cardiology</fullName>
+                <default>false</default>
+                <label>Cardiology</label>
+            </value>
+            <value>
+                <fullName>Dentistry</fullName>
+                <default>false</default>
+                <label>Dentistry</label>
+            </value>
+            <value>
+                <fullName>Dermatology</fullName>
+                <default>false</default>
+                <label>Dermatology</label>
+            </value>
+            <value>
+                <fullName>Diagnostic Imaging</fullName>
+                <default>false</default>
+                <label>Diagnostic Imaging</label>
+            </value>
+            <value>
+                <fullName>Emergency &amp; Critical Care</fullName>
+                <default>false</default>
+                <label>Emergency &amp; Critical Care</label>
+            </value>
+            <value>
+                <fullName>Hemodialysis</fullName>
+                <default>false</default>
+                <label>Hemodialysis</label>
+            </value>
+            <value>
+                <fullName>Integrative Medicine</fullName>
+                <default>false</default>
+                <label>Integrative Medicine</label>
+            </value>
+            <value>
+                <fullName>Interventional Radiology &amp; Endoscopy</fullName>
+                <default>false</default>
+                <label>Interventional Radiology &amp; Endoscopy</label>
+            </value>
+            <value>
+                <fullName>Neuroendoscopy</fullName>
+                <default>false</default>
+                <label>Neuroendoscopy</label>
+            </value>
+            <value>
+                <fullName>Neurology</fullName>
+                <default>false</default>
+                <label>Neurology</label>
+            </value>
+            <value>
+                <fullName>Oncology</fullName>
+                <default>false</default>
+                <label>Oncology</label>
+            </value>
+            <value>
+                <fullName>Ophtalmology</fullName>
+                <default>false</default>
+                <label>Ophtalmology</label>
+            </value>
+            <value>
+                <fullName>Pathology</fullName>
+                <default>false</default>
+                <label>Pathology</label>
+            </value>
+            <value>
+                <fullName>Radiation Oncology</fullName>
+                <default>false</default>
+                <label>Radiation Oncology</label>
+            </value>
+            <value>
+                <fullName>Reptile &amp; Amphibian</fullName>
+                <default>false</default>
+                <label>Reptile &amp; Amphibian</label>
+            </value>
+            <value>
+                <fullName>Sports Medicine and Rehab</fullName>
+                <default>false</default>
+                <label>Sports Medicine and Rehab</label>
+            </value>
+            <value>
+                <fullName>Surgery</fullName>
+                <default>false</default>
+                <label>Surgery</label>
+            </value>
+            <value>
+                <fullName>Surgical Oncology</fullName>
+                <default>false</default>
+                <label>Surgical Oncology</label>
+            </value>
+            <value>
+                <fullName>Urgent Care</fullName>
+                <default>false</default>
+                <label>Urgent Care</label>
+            </value>
+            <value>
+                <fullName>Brick &amp; Mortar</fullName>
+                <default>false</default>
+                <label>Brick &amp; Mortar</label>
+            </value>
+            <value>
+                <fullName>Mobile</fullName>
+                <default>false</default>
+                <label>Mobile</label>
+            </value>
+            <value>
+                <fullName>Pop-Up</fullName>
+                <default>false</default>
+                <label>Pop-Up</label>
+            </value>
+            <value>
+                <fullName>Buying Group</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Buying Group</label>
+            </value>
+            <value>
+                <fullName>Capital Partner/Investor</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Capital Partner/Investor</label>
+            </value>
+            <value>
+                <fullName>College University</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>College / University</label>
+            </value>
+            <value>
+                <fullName>Corporate Account</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Corporate Account</label>
+            </value>
+            <value>
+                <fullName>Corporate Account Buying Group</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Corporate Account Buying Group</label>
+            </value>
+            <value>
+                <fullName>Distributor</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Distributor</label>
+            </value>
+            <value>
+                <fullName>Independent</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Independent</label>
+            </value>
+            <value>
+                <fullName>Independent Company</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Independent Company</label>
+            </value>
+            <value>
+                <fullName>Manufacturer</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Manufacturer</label>
+            </value>
+            <value>
+                <fullName>National</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>National</label>
+            </value>
+            <value>
+                <fullName>PIMS</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>PIMS</label>
+            </value>
+            <value>
+                <fullName>Regional</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Regional</label>
+            </value>
+            <value>
+                <fullName>Shelter Non Profit</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Shelter/Non Profit</label>
+            </value>
+            <value>
+                <fullName>University</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>University</label>
+            </value>
+            <value>
+                <fullName>Vet Tech School</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Vet Tech School</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Specialty</controllingFieldValue>
+            <valueName>Anesthesia &amp; Pain Management</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Specialty</controllingFieldValue>
+            <valueName>Avian &amp; Exotic Pet</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Specialty</controllingFieldValue>
+            <valueName>Cardiology</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Specialty</controllingFieldValue>
+            <valueName>Dentistry</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Specialty</controllingFieldValue>
+            <valueName>Dermatology</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Specialty</controllingFieldValue>
+            <valueName>Diagnostic Imaging</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Specialty</controllingFieldValue>
+            <valueName>Emergency &amp; Critical Care</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Specialty</controllingFieldValue>
+            <valueName>Hemodialysis</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Specialty</controllingFieldValue>
+            <valueName>Integrative Medicine</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Specialty</controllingFieldValue>
+            <valueName>Interventional Radiology &amp; Endoscopy</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Specialty</controllingFieldValue>
+            <valueName>Neuroendoscopy</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Specialty</controllingFieldValue>
+            <valueName>Neurology</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Specialty</controllingFieldValue>
+            <valueName>Oncology</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Specialty</controllingFieldValue>
+            <valueName>Ophtalmology</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Specialty</controllingFieldValue>
+            <valueName>Pathology</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Specialty</controllingFieldValue>
+            <valueName>Radiation Oncology</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Specialty</controllingFieldValue>
+            <valueName>Reptile &amp; Amphibian</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Specialty</controllingFieldValue>
+            <valueName>Sports Medicine and Rehab</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Specialty</controllingFieldValue>
+            <valueName>Surgery</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Specialty</controllingFieldValue>
+            <valueName>Surgical Oncology</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Specialty</controllingFieldValue>
+            <valueName>Urgent Care</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>General Practice</controllingFieldValue>
+            <valueName>Brick &amp; Mortar</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>General Practice</controllingFieldValue>
+            <valueName>Mobile</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>General Practice</controllingFieldValue>
+            <valueName>Pop-Up</valueName>
+        </valueSettings>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

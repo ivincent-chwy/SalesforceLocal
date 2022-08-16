@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Corporate Account</fullName>
+        <default>false</default>
+        <label>Corporate Account</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Independent</fullName>
+        <default>false</default>
+        <label>Independent</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Shelter/Non-Profit</fullName>
+        <default>false</default>
+        <label>Shelter/Non-Profit</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Buying Group</fullName>
+        <default>false</default>
+        <label>Buying Group</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Capital Partner/Investor</fullName>
+        <default>false</default>
+        <label>Capital Partner/Investor</label>
+    </standardValue>
+    <standardValue>
+        <fullName>PIMS</fullName>
+        <default>false</default>
+        <label>PIMS</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Manufacturer</fullName>
+        <default>false</default>
+        <label>Manufacturer</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Distributor</fullName>
+        <default>false</default>
+        <label>Distributor</label>
+    </standardValue>
+    <standardValue>
+        <fullName>National</fullName>
+        <default>false</default>
+        <label>National</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Regional</fullName>
+        <default>false</default>
+        <label>Regional</label>
+    </standardValue>
+    <standardValue>
+        <fullName>University/College</fullName>
+        <default>false</default>
+        <label>University/College</label>
+    </standardValue>
+</StandardValueSet>
