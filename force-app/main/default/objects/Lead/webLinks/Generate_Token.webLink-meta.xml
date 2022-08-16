@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Generate_Token</fullName>
+    <availability>online</availability>
+    <description>Call flow to generate token and update the record</description>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <height>600</height>
+    <linkType>url</linkType>
+    <masterLabel>Generate Token</masterLabel>
+    <openType>sidebar</openType>
+    <protected>false</protected>
+    <url>/flow/
+Generate_HMAC_Token_and_Update_Record?recordId={!Lead.Id}&amp;retURL=/lightning/r/Lead/{!Lead.Id}/view</url>
+</WebLink>
