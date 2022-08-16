@@ -1,0 +1,703 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VeterinaryPartner</fullName>
+    <active>true</active>
+    <label>Veterinary Partner</label>
+    <picklistValues>
+        <picklist>AccountSource</picklist>
+        <values>
+            <fullName>Inbound</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kyrios</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Landing Page</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Referral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trade Show</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Animal_Types_Treated__c</picklist>
+        <values>
+            <fullName>Exotic Animals</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Food Animals</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Large Animals - Horse</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Large Animals - Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Small Animals - Cat</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Small Animals - Dog</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Category__c</picklist>
+        <values>
+            <fullName>Anesthesia %26 Pain Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Avian %26 Exotic Pet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Brick %26 Mortar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cardiology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dentistry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dermatology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Diagnostic Imaging</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Emergency %26 Critical Care</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hemodialysis</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Integrative Medicine</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Interventional Radiology %26 Endoscopy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mobile</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Neuroendoscopy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Neurology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oncology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ophtalmology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pathology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pop-Up</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Radiation Oncology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reptile %26 Amphibian</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sports Medicine and Rehab</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Surgery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Surgical Oncology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Urgent Care</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Customer_Tier__c</picklist>
+        <values>
+            <fullName>Tier 1%3A Clinics 1-500</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tier 2%3A Clinics 501-5%2C000</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tier 3%3A Clinics 5001-10%2C000</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tier 4%3A 10%2C001%2B</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Establishment_Type__c</picklist>
+        <values>
+            <fullName>Veterinary Clinic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Veterinary Hospital</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Home_Delivery_Provider__c</picklist>
+        <values>
+            <fullName>Covetrus</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In-House Only</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>None</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vet Source</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ISR_Call_Campaign__c</picklist>
+        <values>
+            <fullName>2021 Q4 Pilot Campaign</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Industry</picklist>
+        <values>
+            <fullName>Agriculture</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Apparel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Banking</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Biotechnology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chemicals</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Communications</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Construction</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Consulting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Education</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electronics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Energy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Engineering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Entertainment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Environmental</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Finance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Food %26 Beverage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Government</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Healthcare</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hospitality</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Insurance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Machinery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manufacturing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Media</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not For Profit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recreation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shipping</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Technology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Telecommunications</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transportation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Utilities</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Insurance_Company_Affiliations__c</picklist>
+        <values>
+            <fullName>Provider 3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Provider 4</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>On_site_Practice_Pet_Species__c</picklist>
+        <values>
+            <fullName>Bird</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cat</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chinchilla %26 Degu</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dog</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ferret</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fish</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gerbil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Guinea Pig</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hamster</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hedgehog</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Horse</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mouse %26 Rats</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rabbit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reptile</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sugar Glider</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Organization_Type__c</picklist>
+        <values>
+            <fullName>Profit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>non-profit</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Ownership</picklist>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Private</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Public</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Subsidiary</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>PIMS_Providerrs__c</picklist>
+        <values>
+            <fullName>AI Galaxy and AI Genesis</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AVImark</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cornerstone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Covetrus Pulse %28eVet%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DVMAX</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DaySmart Vet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Digitail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hippo Manager</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IDEXX Neo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ImproMed Advantage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ImproMed Equine</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ImproMed Infinity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IntraVet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No PIMS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Provet Cloud</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shepherd</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VIA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VetBadger</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VetOfficeSuite%2Ecom</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VetPort</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vetspire</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ezyVet</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Practice_Hub_Status__c</picklist>
+        <values>
+            <fullName>Champion Clinic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stable Clinic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unstable Clinic %E2%80%93 Software %3D Practice Hub software related bug issues</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unstable Clinic %E2%80%93 Staff %3D High turnover or frequent questions from staff</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Pricing_Type__c</picklist>
+        <values>
+            <fullName>Customize Pricing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Match Chewy Pricing</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Rating</picklist>
+        <values>
+            <fullName>Cold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hot</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Warm</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Services_Rendered__c</picklist>
+        <values>
+            <fullName>Dental Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>General Surgery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Grooming Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Imaging Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lab Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>On-site Events Hosting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Online Pharmacy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pharmacy on-site</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Preventive Care</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Training Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Treatment Services</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Subtype__c</picklist>
+        <values>
+            <fullName>Capital Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Community College</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>General Practice</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Investor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-Profit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shelter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Specialty</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vet Tech School</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>Buying Group</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Capital Partner%2FInvestor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Corporate Account</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Independent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shelter%2FNon-Profit</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>
